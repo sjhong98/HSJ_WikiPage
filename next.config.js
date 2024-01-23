@@ -8,6 +8,7 @@ const nextConfig = {
       permanent: true
     }]
   },
+  distDir: "dist",
 }
 
 module.exports = nextConfig
