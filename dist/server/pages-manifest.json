@@ -1,6 +1,16 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
+  "/api/hello": "pages/api/hello.js",
   "/_document": "pages/_document.js",
-  "/board/[page]": "pages/board/[page].js"
+  "/board/[page]/paging": "pages/board/[page]/paging.js",
+  "/_error": "pages/_error.js",
+  "/board/[page]/tool": "pages/board/[page]/tool.js",
+  "/board/[page]": "pages/board/[page].js",
+  "/board/create": "pages/board/create.js",
+  "/board/post/[id]": "pages/board/post/[id].js",
+  "/board/post/[id]/modify": "pages/board/post/[id]/modify.js",
+  "/components/btn": "pages/components/btn.js",
+  "/components/header": "pages/components/header.js",
+  "/components/title": "pages/components/title.js",
+  "/atom": "pages/atom.js"
 }
