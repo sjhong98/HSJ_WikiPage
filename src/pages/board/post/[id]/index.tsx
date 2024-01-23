@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useRecoilValue } from "recoil";
-import { PostType, postStore } from "@/pages/atom";
+import { PostType, postStore } from "@/atom";
 import { useEffect, useState } from "react";
 import Tool from "@/pages/board/[page]/tool";
 

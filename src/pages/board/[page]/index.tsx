@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useRecoilValue, useSetRecoilState } from "recoil"
-import { PostType, postStore } from "../../atom";
+import { PostType, postStore } from "../../../atom";
 import Tool from "./tool";
 import Paging from "./paging";
 

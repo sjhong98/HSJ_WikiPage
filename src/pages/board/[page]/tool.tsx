@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Btn } from "@/pages/components/btn";
+import { Btn } from "@/btn";
 
 export default function Tool(props: {func:string}) {
     const router = useRouter();
