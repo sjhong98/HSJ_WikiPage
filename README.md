@@ -1,10 +1,14 @@
 # 코딩허브 프론트엔드 실무 과제 _ 홍승재
 
+<br/>
+
 ## 1. 사용한 기술
 - Next.js / Typescript
 - Recoil + Recoil-Persist
   : 별도의 DB가 없으므로, recoil persist를 이용하여 localStorage에 상태를 저장하여 관리하였습니다.
 - Tailwind CSS
+
+<br/>
 
 ## 2. 디렉토리 구조
 L pages <br/>
@@ -21,10 +25,13 @@ L pages <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L index.tsx <br/>
 <br/>
 &nbsp;&nbsp;&nbsp;L components <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L btn.tsx <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L header.tsx <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L title.tsx <br/>
-&nbsp;&nbsp;atom.tsx : recoil atom 파일 <br/>
+<br/>
+L btn.tsx : 버튼 컴포넌트
+L atom.tsx : recoil atom 관련 파일
+
+<br/>
 
 ## 3. 구현 기능
 ### 1) 게시판
@@ -38,3 +45,8 @@ L pages <br/>
 
 ### 4) 게시물 수정
 : 기존 게시물을 수정 가능. 작성과 마찬가지로 내용 미작성 시 업로드 불가.
+
+<br/>
+
+## 4. 배포
+vercel 배포 주소 : https://hsj-wiki-page-git-main-sjhong98s-projects.vercel.app
