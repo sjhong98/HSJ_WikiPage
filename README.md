@@ -1,40 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 코딩허브 프론트엔드 실무 과제 _ 홍승재
 
-## Getting Started
+## 1. 사용한 기술
+- Next.js / Typescript
+- Recoil + Recoil-Persist
+  : 별도의 DB가 없으므로, recoil persist를 이용하여 localStorage에 상태를 저장하여 관리하였습니다.
+- Tailwind CSS
 
-First, run the development server:
+## 2. 디렉토리 구조
+L pages <br/>
+&nbsp;&nbsp;&nbsp;L board <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L [page] : 게시판 페이지 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L index.tsx <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L paging.tsx : pagination <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L tool.tst : button set <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L create : 게시물 작성 페이지 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L index.tsx <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;L post : 개별 게시물 페이지 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L index.tsx <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L modity : 게시물 수정 페이지 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L index.tsx <br/>
+<br/>
+&nbsp;&nbsp;&nbsp;L components <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L btn.tsx <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L header.tsx <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L title.tsx <br/>
+&nbsp;&nbsp;atom.tsx : recoil atom 파일 <br/>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 3. 구현 기능
+### 1) 게시판
+: 게시물을 5개씩 표시하고, 5개 이상일 경우 페이지네이션을 통해 페이지 이동 가능
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2) 개별 게시물
+: 게시물의 title과 content를 표시하고, content에 다른 게시물의 title이 포함되어 있을 경우, 자동으로 링크 생성. 게시물은 수정 가능
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 3) 게시물 작성
+: title과 content를 작성. 내용 미작성 시 업로드 불가.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 4) 게시물 수정
+: 기존 게시물을 수정 가능. 작성과 마찬가지로 내용 미작성 시 업로드 불가.
