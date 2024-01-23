@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  distDir: "dist",
   async redirects() {
     return [{
       source: '/',
@@ -8,7 +8,6 @@ const nextConfig = {
       permanent: true
     }]
   },
-  distDir: "dist",
 }
 
 module.exports = nextConfig
