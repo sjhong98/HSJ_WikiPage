@@ -26,9 +26,9 @@ L pages <br/>
 <br/>
 &nbsp;&nbsp;&nbsp;L components <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L header.tsx <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L btn.tsx <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L title.tsx <br/>
 <br/>
-L btn.tsx : 버튼 컴포넌트
 L atom.tsx : recoil atom 관련 파일
 
 <br/>
