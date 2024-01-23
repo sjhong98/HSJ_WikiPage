@@ -13,7 +13,7 @@ export default function Home() {
     useEffect(() => {
         if(router.query.id !== undefined)
             setCurPost(posts[parseInt(router.query.id as string, 10)]);
-    }, [router.query])
+    }, [router.query, posts])
 
     // title 키워드 -> 링크 치환
     useEffect(() => {
@@ -28,7 +28,7 @@ export default function Home() {
         }, curPost.content);
         newContent = newContent.replaceAll(/\n/g, `<br/>`)
         setContent(newContent);
-    }, [curPost]);
+    }, [curPost, posts]);
 
 
     return (

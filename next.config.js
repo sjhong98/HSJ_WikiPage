@@ -7,7 +7,8 @@ const nextConfig = {
       destination: '/board/1',
       permanent: true
     }]
-  }
+  },
+  distDir: "dist",
 }
 
 module.exports = nextConfig

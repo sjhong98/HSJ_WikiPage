@@ -25,7 +25,7 @@ export default function Modify() {
             setTitle(posts[index].title);
             setContent(posts[index].content);
         }
-    }, [router.query])
+    }, [router.query, posts])
 
     // 해당 인덱스에 splice를 통해 값 업데이트
     const handleClick = () => {

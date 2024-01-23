@@ -37,7 +37,7 @@ export default function Paging(props:Props) {
         if(tempPageSet[0] === 1 || props.length === -1)
             setNoPrev(true);
         setCurPageSet(tempPageSet);
-    }, [pageLength, curPageIndex])
+    }, [pageLength, curPageIndex, props.length])
 
     const handleClick = (index:number) => {
         router.push(`/board/${index}`);
