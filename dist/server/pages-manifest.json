@@ -2,15 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/hello": "pages/api/hello.js",
-  "/board/[page]": "pages/board/[page].html",
-  "/board/[page]/paging": "pages/board/[page]/paging.html",
-  "/board/[page]/tool": "pages/board/[page]/tool.html",
-  "/board/create": "pages/board/create.html",
-  "/board/post/[id]": "pages/board/post/[id].html",
-  "/board/post/[id]/modify": "pages/board/post/[id]/modify.html",
-  "/components/btn": "pages/components/btn.html",
-  "/components/header": "pages/components/header.html",
-  "/components/title": "pages/components/title.html",
-  "/404": "pages/404.html"
+  "/board/[page]": "pages/board/[page].js",
+  "/board/create": "pages/board/create.js",
+  "/board/post/[id]": "pages/board/post/[id].js"
 }

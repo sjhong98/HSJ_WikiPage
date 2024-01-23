@@ -1,5 +1,4 @@
 import { atom } from "recoil";
-import { v1 } from "uuid";
 import { recoilPersist } from "recoil-persist";
 
 const localStorage = typeof window !== "undefined" ? window.localStorage : undefined;
@@ -16,7 +15,7 @@ export interface PostType {
 }
 
 export const postStore = atom<PostType[]>({
-    key: `postStore/${v1()}`,
+    key: `postStore`,
     default: [],
     effects_UNSTABLE: [persistAtom]
 })
