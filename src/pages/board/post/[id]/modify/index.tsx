@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
 import { PostType, postStore } from "@/atom";
 import { ChangeEvent, useEffect, useState } from "react";
-import { Btn } from "@/pages/components/btn"; 
+import Btn from "@/pages/components/btn"; 
 
 export default function Modify() {
     const router = useRouter();
